@@ -5,6 +5,7 @@ body {
 
 body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background-color: lightgray ;
 }
 
 .img-portfolio {
@@ -135,3 +136,23 @@ footer {
 .facontainer li:hover {
   color: #006237;
 }
+
+/* login page css */
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+.modal-content{
+    background-color: darkturquoise;
+}
+.btn-link{
+    color:white;
+}
+.modal-heading h2{
+    color:#ffffff;
+}
+.open-button{
+    background-color: #222;
+    color: #ffffff;
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.open-button:hover {background-color: #4CAF50;}
