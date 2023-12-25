@@ -1,1 +1,1 @@
-# ehep
+# Plasma Simulation and Theory Lab
