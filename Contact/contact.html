@@ -1,0 +1,75 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<link rel="stylesheet" href="contact.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+<body>
+
+  <header>
+    PSL-IITD
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div style="text-align: center;">
+      <h2 class="line">Contact Us</h2>
+    </div>
+
+    <div class="row">
+
+      <div class="column">
+        <div class="google-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d219.0504869898286!2d77.19213361441876!3d28.54549647457314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1dc87305e40d%3A0xcca0ec09258fe592!2sDepartment%20Of%20Physics%2C%20IIT%20Delhi!5e0!3m2!1sen!2sin!4v1703515425495!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="icon">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+
+      <div class="column">
+        <form action="">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Enter Your First Name.." required>
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Enter Your Last Name.." required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter Your Mail.." required>
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="select">Select Country</option>
+            <option value="india">India</option>
+            <option value="us">United State</option>
+            <option value="uk">United Kingdom</option>
+            <option value="japan">Japan</option>
+            <option value="korea">South Korea</option>
+          </select>
+
+          <label for="sub">Subject</label>
+          <textarea id="sub" name="sub" placeholder="Write Something..." style="height:150px;"></textarea>
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Copyright 2023 by JAMSHEDPUR. All Rights Reserved.
+  </footer>
+
+</body>

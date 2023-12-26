@@ -1,0 +1,151 @@
+html,
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #04aa6d;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  header {
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    font-weight: bolder;
+    letter-spacing: 10px;
+    font-size: 30px;
+  }
+  
+  nav {
+    background-color: black;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 10px 14px;
+    display: block;
+  }
+  
+  nav ul li a:hover {
+    color: #04aa6d;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 20px 10px;
+    margin: 5% 20%;
+    box-shadow: 0 0 10px rgb(138, 137, 137);
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+    padding: 20px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #04aa6d;
+    color: whitesmoke;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+    color: whitesmoke;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  .icon {
+    text-align: center;
+    padding: 80px 0;
+    font-size: 40px;
+  }
+  
+  i {
+    letter-spacing: 8px;
+  }
+  
+  .line {
+    background-image: linear-gradient(
+      to right,
+      #04aa6d,
+      whitesmoke 35%,
+      whitesmoke 65%,
+      #04aa6d
+    );
+  
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+    background-position: 0 cen;
+  }
+  
+  footer {
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    text-align: center;
+    padding: 25px;
+    font-size: 15px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      margin-top: 0;
+    }
+  
+    .container {
+      margin: 5%;
+    }
+  
+    .icon {
+      border-bottom: 2px dotted #04aa6d;
+    }
+  }
+
+  .google-map {
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}

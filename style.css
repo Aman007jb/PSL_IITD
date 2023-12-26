@@ -156,3 +156,23 @@ footer {
     font-size: 12px;
 }
 .open-button:hover {background-color: #4CAF50;}
+
+.mx-ht-70 {
+    max-height: 40px !important;
+    vertical-align: middle;
+    /* margin-top: 5px; */
+}
+
+.navbar-brand{
+    vertical-align: top;
+    padding: 9px;
+    text-align: middle;
+    line-height: 10px;
+}
+
+.navbar-nav {
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
+    line-height: 10px;
+    text-align: middle;
+}
