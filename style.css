@@ -176,3 +176,6 @@ footer {
     line-height: 10px;
     text-align: middle;
 }
+.navbar-brand>img {
+    display: inline-block;
+}   
