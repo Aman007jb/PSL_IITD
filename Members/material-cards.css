@@ -1240,3 +1240,7 @@ h1 {
     margin: 0.0em 0;
     font-size: 2.5em;
 }
+
+.navbar-brand>img {
+    display: inline-block;
+}
