@@ -7,9 +7,46 @@
 <link rel='stylesheet' href='https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css'>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css'>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.theme.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.carousel.min.css'><link rel="stylesheet" href="./style.css">
-
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.carousel.min.css'>
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./laser.css">
 </head>
+<style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+        z-index: 9999999;
+    }
+
+    .content-box {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      color: #555;
+    }
+
+  </style>
 <body>
 <!-- partial:index.partial.html -->
 <html lang="en">
@@ -18,9 +55,6 @@
 
     
     <title>Plasma Simulation Lab</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
@@ -40,10 +74,10 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar">Test1</span>
-                    <span class="icon-bar">Test2</span>
-                    <span class="icon-bar">IDK</span>
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html">
                     <img class="logo-default mx-ht-70" src="images/logo-iit.png" alt="IITD Logo">
@@ -199,16 +233,55 @@
             <section class="wow fadeInDown" data-wow-delay="0.5s">
                 <h4>Laser/EM wave  interaction with magnetized plasma</h4>
                 <p align= 'justify'>
-                    Recent technological advancements in laser systems have significantly improved various aspects of laser technology, including the power of petawatt (PW) (also there are proposals for exawatt (EW) power using chirped pulse amplification (CPA) technique), repetition rate, pulse width (a single laser shot can deliver energy of kJ orders in f s timescale), and operational frequency. Laser-plasma interaction is a rapidly growing field of research with significant implications for numerous scientific and diagnostic applications such as the generation of GeV electrons, 100 M eV protons, gamma- ray and X-ray sources, etc. The interaction between a high-intensity laser beam and plasma can result in a variety of complex phenomena, including the generation of high-energy particles, novel radiation source, magnetic field generation and transport. It also holds the potential to aid in laser fusion. <br>
-                    Magnetized plasma opens up the prospects of a new regime in which the electron gyro-frequency can be higher than the laser frequency. In this scenario, one can directly transfer the laser energy to ions. The application of a strong magnetic field also enables low-frequency electromagnetic waves to interact with the bulk overdense plasma through the various permitted passbands of the magnetized dispersion relation. Thus, the laser interaction with magnetized plasma opens the possibility of investigating fundamental aspects of bulk plasma studies. This also provides a wide range of applications for understanding space plasma observations generating collision-less shocks, gamma ray generation, THz generation, magnetic re-connection, fusion studies in strongly magnetized plasma, mechanisms for novel ion acceleration, etc.
+                    Recent advancements in laser technology, specifically in petawatt (PW) and proposed exawatt (EW) power utilizing chirped pulse amplification (CPA), have revolutionized the field. Enhanced power, repetition rates, and pulse widths allow for diverse applications, from generating GeV electrons to exploring laser-plasma interactions. High-intensity laser beams interacting with plasma yield complex phenomena, including high-energy particle generation, novel radiation sources, and magnetic field manipulation. Magnetized plasma introduces a novel regime, enabling direct laser energy transfer to ions and interaction with low-frequency electromagnetic waves. This holds promise for diverse applications, from space plasma studies to fusion and ion acceleration mechanisms. <button onclick="showOverlay('overlay1')">Read more..</button>
                 </p>
-             </section>
+            </section>
             </div>
             <div class="col-md-6">
                 <section class="wow fadeInDown" data-wow-delay="0.5s">
                     <img class="img-responsive" src="./images/Laserinterac.png" alt="">
                 </section>
             </div>
+            <div class="overlay" id="overlay1">
+                <div class="content-box">
+                    <span class="close-button" onclick="closeOverlay('overlay1')">&times;</span>
+                  <div id="overlayhead">
+                    <h2 >Projects in Laser Plasma Interaction</h2>
+                  </div>
+                  <div class='olcontainer'>
+                    <section id='overlay'>
+                      <div class='info'>
+                        <h1>Project Title</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias vero perferendis tenetur quaerat illo ex iste velit similique mollitia harum tempora inventore omnis architecto perspiciatis laboriosam ducimus optio repudiandae ipsum.</p>
+                      </div>
+                      <div class='images'>
+                        <figure class='large' style='background-image: url(https://www.markmurray.co/images/stock/65.jpg)'></figure>
+                        <figure class='small' style='background-image: url(https://www.markmurray.co/images/stock/64.jpg)'></figure>
+                      </div>
+                    </section>
+                    <section id='overlay'>
+                        <div class='info'>
+                          <h1>Project Title</h1>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias vero perferendis tenetur quaerat illo ex iste velit similique mollitia harum tempora inventore omnis architecto perspiciatis laboriosam ducimus optio repudiandae ipsum.</p>
+                        </div>
+                        <div class='images'>
+                          <figure class='large' style='background-image: url(https://www.markmurray.co/images/stock/65.jpg)'></figure>
+                          <figure class='small' style='background-image: url(https://www.markmurray.co/images/stock/64.jpg)'></figure>
+                        </div>
+                    </section>
+                    <section id='overlay'>
+                        <div class='info'>
+                          <h1>Project Title</h1>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias vero perferendis tenetur quaerat illo ex iste velit similique mollitia harum tempora inventore omnis architecto perspiciatis laboriosam ducimus optio repudiandae ipsum.</p>
+                        </div>
+                        <div class='images'>
+                          <figure class='large' style='background-image: url(https://www.markmurray.co/images/stock/65.jpg)'></figure>
+                          <figure class='small' style='background-image: url(https://www.markmurray.co/images/stock/64.jpg)'></figure>
+                        </div>
+                    </section>
+                   </div>
+                </div>
+              </div>
             <hr>
         <!-- </div> -->
         <!-- /.row -->
@@ -225,7 +298,7 @@
             <section class="wow fadeInDown" data-wow-delay="0.5s">
                 <h4>Plasma Based Ion-Accelerators</h4>
                 <p align= 'justify'>
-                  
+                    Plasma being already broken down can sustain very strong electric fields (~10 GV/m as compared to ~10 MV/m in traditional RF accelerators), and therefore is a potential future candidate for efficient charged particle acceleration. Our group's interest lies in exploring proton/ion acceleration through relativistic laser plasma interactions, mainly target normal sheath acceleration (TNSA) scheme involving thick targets. These economically produced energetic proton/ion beams will pave the way for easily accessible cancer therapy among many other applications. However, it has been an area of frontline research for nearly two decades there are still challenges to overcome, pertaining to the spectrum as well as the divergence of the accelerated protons/ions. We employ particle-in-cell (PIC) simulations to investigate the effect of laser as well as target parameters on the quality of the accelerated proton/ion beam. <button onclick="showOverlay('overlay2')">Read more..</button>
                 </p>
              </section>
             </div>
@@ -233,6 +306,26 @@
                 <section class="wow fadeInDown" data-wow-delay="0.5s">
                     <img class="img-responsive" src="./images/tnsa.jpg" alt="">
                 </section>
+            </div>
+            <div class="overlay" id="overlay2">
+                <div class="content-box">
+                    <span class="close-button" onclick="closeOverlay('overlay2')">&times;</span>
+                  <div id="overlayhead">
+                    <h2 >Projects on Plasma Based Accelerator</h2>
+                  </div>
+                  <div class='olcontainer'>
+                    <section id='overlay'>
+                      <div class='info'>
+                        <h1>Project Title</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias vero perferendis tenetur quaerat illo ex iste velit similique mollitia harum tempora inventore omnis architecto perspiciatis laboriosam ducimus optio repudiandae ipsum.</p>
+                      </div>
+                      <div class='images'>
+                        <figure class='large' style='background-image: url(https://www.markmurray.co/images/stock/65.jpg)'></figure>
+                        <figure class='small' style='background-image: url(https://www.markmurray.co/images/stock/64.jpg)'></figure>
+                      </div>
+                    </section>
+                  </div>
+                </div>
             </div>
         </div>
         
@@ -247,7 +340,7 @@
             <section class="wow fadeInDown" data-wow-delay="0.5s">
                 <h4>Complex Dusty Plasma</h4>
                 <p align= 'justify'>
-                    
+                    In the expansive field of plasma physics, the study of complex dusty plasmas has emerged as a captivating and multidisciplinary research domain, unlocking new insights into the intricate behavior of matter under extreme conditions. Complex dusty plasmas, often referred to as dusty or dusty-gas plasmas, represent a distinctive state of matter that combines charged particles (plasma) with solid micro- or nano-scale particles, introducing an additional layer of complexity to traditional plasma physics. Dusty plasmas are encountered in various natural and laboratory environments, ranging from interstellar clouds and planetary rings to industrial processing applications. In controlled environment settings that one can delve deeper into understanding the fundamental properties and behaviors of these unique plasmas. In our lab, we simulate these controlled environment using the molecular dynamics simulations for understanding the basic concepts of dusty plasmas such as the transport dynamics, dust-acoustic waves, self-organization, phase transitions, and emergent behavior, etc.  <button onclick="showOverlay('overlay3')">Read more..</button>
                 </p>
              </section>
             </div>
@@ -255,6 +348,31 @@
                 <section class="wow fadeInDown" data-wow-delay="0.5s">
                     <img class="img-responsive" src="https://placehold.it/700x450" alt="">
                 </section>
+            </div>
+            <div class="overlay" id="overlay3">
+                <div class="content-box">
+                    <span class="close-button" onclick="closeOverlay('overlay3')">&times;</span>
+                  <div id="overlayhead">
+                    <h2 >Projects in Complex dusty plasma</h2>
+                  </div>
+                  <div class='olcontainer'>
+                    <section id='overlay'>
+                      <div class='info'>
+                        <h1>Diffusive transport in Strongly coupled dusty plasma in presence of magnetic field</h1>
+                        <h2 margin="2em">Aman Singh Katariya</h2>
+                        <h2>PI: Prof. Amita Das</h2>
+                        <p>
+                            With increasing potential applications of plasmas, one can easily come across the dusty plasma environment. Many of these applications involve the use of a magnetic field. The dynamics of charged species in a simple plasma is known for a long time. However, with the addition of charged dust species the dynamics are selectively different due to the short range Yukawa potential which is a resultant of debye shielding of dust particles. These dynamics of dust species can also differ with respect to the coupling strength of the Charged particles. <br>
+                            In this project, i focus on understanding the dynamics of the charged dust species in a strongly coupled dusty plasma environment, in presence of an externally applied magnetic field. The study is done by using the molecular dynamics simulations. We use the open-source <i>Large-scale Atomic/Molecular Massively Parallel Simulator</i>i (LAMMPS) Molecular Dynamics Simulator code, developed by developers at Sandia National Labs and Temple University. The simulation results are visualized using the Visual Molecular Dynamics (VMD) software, developed by people from University of Illinois.
+                        </p>
+                      </div>
+                      <div class='images'>
+                        <figure class='large' style='background-image: url(https://www.markmurray.co/images/stock/65.jpg)'></figure>
+                        <figure class='small' style='background-image: url(https://www.markmurray.co/images/stock/64.jpg)'></figure>
+                      </div>
+                    </section>
+                  </div>
+                </div>
             </div>
         </div>
         <hr>
@@ -310,7 +428,7 @@
             <section class="wow fadeInDown" data-wow-delay="0.5s">
                 <h4>Plasma Driven Space propulsion</h4>
                 <p align= 'justify'>
-                  
+                    Plasma based propulsion has recently become the preferred path for deep space missions, especially due to a much better fuel efficiency than conventional liquid propulsion scheme hence leading to high specific impulse. On top of that, the electrode-less plasma thrusters have additional advantage of considerably longer lifetimes running into several years. There exist mainly two varieties, helicon plasma thruster (with ion cyclotron heating) and electron cyclotron resonance based plasma thruster and both of them rely on the concept of magnetic nozzle. We are interested in developing models and simulate the performance of these electrode-less plasma thrusters, using fluid as well as particle approaches. <button onclick="showOverlay('overlay4')">Read more..</button>
                 </p>
              </section>
             </div>
@@ -318,6 +436,56 @@
                 <section class="wow fadeInDown" data-wow-delay="0.5s">
                     <img class="img-responsive" src="./images/dustyplasma.png" alt="">
                 </section>
+            </div>
+            <div class="overlay" id="overlay4">
+                <div class="content-box">
+                    <span class="close-button" onclick="closeOverlay('overlay4')">&times;</span>
+                  <div id="overlayhead">
+                    <h2 >Projects in Complex dusty plasma</h2>
+                  </div>
+                  <div class='olcontainer'>
+                    <section id='overlay'>
+                      <div class='info'>
+                        <h1>Diffusive transport in Strongly coupled dusty plasma in presence of magnetic field</h1>
+                        <h2 margin="2em">Aman Singh Katariya</h2>
+                        <h2>PI: Prof. Amita Das</h2>
+                        <p>
+                            Most of the plasma naturally occuring is dusty plasma, and with increasing potential applications of plasmas, one can easily come across the dusty plasma environment. Many of these applications involve the use of a magnetic field. The dynamics of charged species in a simple plasma is known for a long time. However, with the addition of charged dust species the dynamics are selectively different due to the short range Yukawa potential which is a resultant of debye shielding of dust particles. These dynamics of dust species can also differ with respect to the coupling strength of the Charged particles. <br>
+                            In this project, i focus on understanding the dynamics of the charged dust species in a strongly coupled dusty plasma environment, in presence of an externally applied magnetic field. The study is done by using the molecular dynamics simulations. We use the open-source <i>Large-scale Atomic/Molecular Massively Parallel Simulator</i>i (LAMMPS) Molecular Dynamics Simulator code, developed by developers at Sandia National Labs and Temple University. The simulation results are visualized using the Visual Molecular Dynamics (VMD) software, developed by people from University of Illinois.
+                        </p>
+                      </div>
+                      <div class='images'>
+                        <figure class='large' style='background-image: url(https://www.markmurray.co/images/stock/65.jpg)'></figure>
+                        <figure class='small' style='background-image: url(https://www.markmurray.co/images/stock/64.jpg)'></figure>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+            </div>
+            <div class="overlay" id="overlay4">
+                <div class="content-box">
+                    <span class="close-button" onclick="closeOverlay('overlay4')">&times;</span>
+                  <div id="overlayhead">
+                    <h2 >Projects in Complex dusty plasma</h2>
+                  </div>
+                  <div class='olcontainer'>
+                    <section id='overlay'>
+                      <div class='info'>
+                        <h1>Diffusive transport in Strongly coupled dusty plasma in presence of magnetic field</h1>
+                        <h2 margin="2em">Priya Deshwal</h2>
+                        <h2>PI: Prof. Amita Das</h2>
+                        <p>
+                            In the expansive field of plasma physics, the study of complex dusty plasmas has emerged as a captivating and multidisciplinary research domain, unlocking new insights into the intricate behavior of matter under extreme conditions. Complex dusty plasmas, often referred to as dusty or dusty-gas plasmas, represent a distinctive state of matter that combines charged particles (plasma) with solid micro- or nano-scale particles, introducing an additional layer of complexity to traditional plasma physics. <br>
+                            In this project. we delve into complex dusty plasma research exploring phenomena like self-organization, dust acoustic waves and more, using the molecular dynamics simulations. Advanced experimental techniques and theoretical models contribute to understanding emergent behavior in these systems, highlighting the interdisciplinary impact of complex dusty plasma studies on astrophysics, materials science, and propulsion technologies.
+                        </p>
+                      </div>
+                      <div class='images'>
+                        <figure class='large' style='background-image: url(https://www.markmurray.co/images/stock/65.jpg)'></figure>
+                        <figure class='small' style='background-image: url(https://www.markmurray.co/images/stock/64.jpg)'></figure>
+                      </div>
+                    </section>
+                  </div>
+                </div>
             </div>
         </div>
 
@@ -353,12 +521,31 @@
 </body>
 
 </html>
+
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.0/wow.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.carousel.js'></script><script  src="./script.js"></script>
+<script>
+    function showOverlay(overlayId) {
+  // Get the overlay element by its ID
+  var overlay = document.getElementById(overlayId);
 
+  // Display the overlay
+  overlay.style.display = 'flex';
+}
+
+function closeOverlay(overlayId) {
+  // Get the overlay element by its ID
+  var overlay = document.getElementById(overlayId);
+
+  // Close the overlay
+  overlay.style.display = 'none';
+}
+
+
+  </script>
 </body>
 </html>
