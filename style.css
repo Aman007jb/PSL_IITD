@@ -180,3 +180,75 @@ footer {
 .navbar-brand>img {
     display: inline-block;
 }
+
+/* // Display a cross with CSS only.
+ //
+ // $size  : px or em
+ // $color : color
+ // $thickness : px */
+ .btn-close {
+    margin-top: -40px;
+    margin-left: -40px;
+    border: 0;
+    padding: 0;
+    background: #06f;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 150ms;
+  }
+  .btn-close .icon-cross {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+  }
+  .btn-close .icon-cross:before, .btn-close .icon-cross:after {
+    content: '';
+    position: absolute;
+    top: 8.5px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #fff;
+    border-radius: 6px;
+  }
+  .btn-close .icon-cross:before {
+    transform: rotate(45deg);
+  }
+  .btn-close .icon-cross:after {
+    transform: rotate(-45deg);
+  }
+  .btn-close .icon-cross span {
+    display: block;
+  }
+  .btn-close:hover, .btn-close:focus {
+    transform: rotateZ(90deg);
+    background: #0052cc;
+  }
+  /* body {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+    height: 100vh;
+  } */
+  .visually-hidden {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
+  
