@@ -232,7 +232,7 @@ footer {
   }
   .btn-close:hover, .btn-close:focus {
     transform: rotateZ(90deg);
-    background: #0052cc;
+    background: #cc4100;
   }
   /* body {
     display: flex;
