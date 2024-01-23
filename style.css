@@ -59,14 +59,14 @@ footer {
 
 /* Responsive Styles */
 
-@media(max-width:991px) {
+@media(max-width:540px) {
     .customer-img,
     .img-related {
         margin-bottom: 30px;
     }
 }
 
-@media(max-width:767px) {
+@media(max-width:640px) {
     .img-portfolio {
         margin-bottom: 15px;
     }
